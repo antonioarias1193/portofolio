@@ -7,16 +7,24 @@ body {
     padding: 0;
   }
 
-  .stick_it .sticky{
-    padding: 5px 100px;
+  .container-fluid{
+    transition: 0.2s;
+ }
 
-  }
 .gambar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #fff; 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: width 0.3s, height 0.3s;
+  }
+
+  .gambar.sizingonscroll {
+    transition: transform 0.3s;
+    width: 100px;
+    height: 100px;
+   
   }
 
   .gambar:hover {
@@ -85,19 +93,6 @@ body {
     margin-bottom: 20px;
     color: #333;
 }
-
-
-/* .custom-button {
-  margin-top: 30px;
-  background-color: #007BFF;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s, color 0.3s;
-} */
 
 .custom-button:hover {
   background-color: #0056b3;
