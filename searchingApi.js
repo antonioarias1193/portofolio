@@ -19,7 +19,7 @@ function searching_movie() {
               <div class="card-body">
                 <h5 class="card-title">${m.Title}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">${m.Year}</h6>
-                <a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal" data-bs-target="#details_movie" data-imdbid="${m.imdbID}">Go somewhere</a>
+                <a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal" data-bs-target="#details_movie" data-imdbid="${m.imdbID}">Details</a>
               </div>
             </div>
           </div>`;
