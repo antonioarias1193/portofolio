@@ -7,7 +7,7 @@ With Github Pages:
 1. Just type the URL link antonioarias1193.github.io/portfolio
 2. The browser will run index.html
 
-With the inde.html file:
+With the index.html file:
 1. Download all these projects to your computer.
 2. Don't delete the default files to avoid errors
 3. Open the `index.html` file using your web browser.
