@@ -29,11 +29,11 @@ This project uses Bootstrap for styling. Make sure you have an internet connecti
 
 ## Display Example
 
-You can see an example of what this project looks like [here](#).
+You can see an example of what this project looks like [here](https://antontoys.github.io/antonportofolio/).
 
 ## Licence
 
-This project is licensed under a personal license (LICENSE).
+This project is licensed under a personal license (©[2023] [Antonio Arias]. Copyright is protected for all works displayed on this site.).
 
 ## Contribution
 
