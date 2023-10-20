@@ -19,7 +19,7 @@ function searching_movie() {
 		});
 		console.log(movies); // Check results by console
 		const paste = document.getElementById("Smovie_container_cards");
-		paste.innerHTML = cards; // Put many cards into cards container
+		paste.innerHTML = `<div class="row">` + cards + `</div>`; // Put many cards into cards container
 
 		// function button details
 		const detailbt = document.querySelectorAll(".modal-detail-button"); // get button details value
@@ -42,22 +42,24 @@ function searching_movie() {
 }
 
 function showcards(m) {
-	return `<div class="col-md-4 my-5">
-	<div class="card">
-  		<img src="${m.Poster}" class="card-img-top" alt= Movie "${m.Title}">
-  		<div class="card-body">
-		<h5 class="card-title">${m.Title}</h5>
-		<h6 class="card-subtitle mb-2 text-body-secondary">${m.Year}</h6>
-		<a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal" data-bs-target="#details_movie" data-imdbid="${m.imdbID}">Details</a>
-  		</div>
-	</div>
-</div>`;
+	return `
+		<div class="col my-4">
+			<div class="card h-100">
+				<img src="${m.Poster}" class="card-img-top" alt= Movie "${m.Title}">
+				<div class="card-body">
+				<h5 class="card-title">${m.Title}</h5>
+				<h6 class="card-subtitle mb-2 text-body-secondary">${m.Year}</h6>
+				<a href="#" class="btn btn-primary modal-detail-button" data-bs-toggle="modal" data-bs-target="#details_movie" data-imdbid="${m.imdbID}">Details</a>
+				</div>
+			</div>
+		</div>
+`;
 }
 
 function showMovieDetail(m) {
 	return `<div class="container-fluid">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col">
         <img src="${m.Poster}" class="img-fluid" alt="">
       </div>
       <div class="col-md">

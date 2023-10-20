@@ -7,6 +7,7 @@ body {
     padding: 0;
   }
 
+/* =============== Navbar Head ============================ */
   .container-fluid{
     transition: 0.2s;
  }
@@ -32,9 +33,27 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
+  /* =============== Navbar Head ============================ */
+  
+  /* =============== Introduction ============================ */
+  .deskripsi {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    padding-left: 5vh;
+    padding-right: 5vh;
+    max-width: 60vh;
+  }
+  
+  .deskripsi p {
+    font-size: 1.2rem;
+    color: #333;
+  }
   .imagedesc{
     width: 200px;
-    height: auto;
+    height: 170px;
 
     transition: transform 0.3s ease-in-out, circle-shadow 0.3s ease-in-out;
   }
@@ -44,6 +63,22 @@ body {
 
   }
 
+  .img-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @media (max-width: 668px) {
+    .img-description{
+      flex-direction: column-reverse;
+    }
+  }
+/* =============== Introduction ============================ */
+
+/* =============== Carousel Any Film References Slide ============================ */
   #text_moviesdesc {
     border-radius: 10px;
     max-width: 100rem;
@@ -79,30 +114,26 @@ body {
       margin-top: 50px;
     }
   }
+  /* =============== Carousel Any Film References Slide ============================ */
   
-  .deskripsi {
-    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: left;
-}
-
-.deskripsi p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.custom-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .custom-button {
-      margin-top: 40px;
+  /* =============== Movie Search References ================== */
+  .input-group{
+    padding-left: 10%;
+    padding-right: 10%;
   }
-}
+
+  .card{
+    width: 40vh;
+    margin-left: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 10px #0000004b ;
+  }
+
+  #Smovie_container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+   /* =============== Movie Search References ================== */
+  
