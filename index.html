@@ -40,8 +40,8 @@
               </a>
             </li>
             <li class="nav-item pe-4">
-              <a class="nav-link" href="#pencari_movies">
-                <h4>Movies</h4>
+              <a class="nav-link" href="#link_projectNavbar">
+                <h4>Projects</h4>
               </a>
             </li>
             <li class="nav-item pe-4">
@@ -61,7 +61,7 @@
   <!-- ================================================ Content spacing ================================================ -->
 
   <!-- ================================================ Introduction =================================================== -->
-  <div class="px-4 py-5 my-5 text-center">
+  <div id="Profile_Me" class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold text-body-emphasis">Hi, It's me Antonio Arias called Anton</h1>
   </div>
 
@@ -70,7 +70,7 @@
   </div>
 
 
-  <div id="Profile_Me" class="img-description">
+  <div class="img-description">
     <div class="deskripsi ">
       <p>I am a web developer experienced in creating functional and attractive websites. With knowledge of HTML,
         CSS,
@@ -84,74 +84,30 @@
   <!-- ================================================ Introduction =================================================== -->
 
   <!-- ================================================ Carousel Any Film References Slide ============================= -->
-  <div class="px-4 py-5 my-5 text-center bg-dark border-5" id="text_moviesdesc">
-    <h1 class="display-5 fw-bold text-light">Any Film References</h1>
+  <div class="px-4 py-5 my-5 text-center bg-dark" id="link_projectNavbar">
+    <h1 class="display-5 fw-bold text-light">My Projects</h1>
   </div>
-  <div id="carouselExampleAutoplaying" class="carousel slide bg-dark" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div id="slide1" class="carousel-item active">
-        <h1 id="title_slide1">Title</h1>
-      </div>
-      <div id="slide2" class="carousel-item">
-        <h1 id="title_slide2">Title</h1>
-      </div>
-      <div id="slide3" class="carousel-item">
-        <h1 id="title_slide3">Title</h1>
-      </div>
-      <div id="slide4" class="carousel-item">
-        <h1 id="title_slide4">Title</h1>
-      </div>
+
+  <div class="projects d-flex justify-content-around flex-wrap">
+    <div class="card" style="width: 18rem;">
+      <a href="./projects/movieSearch/movie_search.html" class="text-decoration-none">
+        <img src="images/project_movie.png" class="card-img-top" alt="images project movie search">
+        <div class="card-body text-center text-body-secondary text-decoration-">
+          Movies Search
+        </div>
+      </a>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- ================================================ Carousel Any Film References Slide ============================= -->
 
-  <!-- ================================================ Movie Search References ======================================== -->
-  <div class="px-4 py-5 my-5 text-center" id="pencari_movies">
-    <h1 class="display-5 fw-bold text-body-emphasis">Type Movie Search References Below</h1>
-  </div>
-
-  <div class="input-group mb-3">
-    <input type="text" class="form-control border-black fs-5" id="search_control"
-      placeholder="Type Movies You want know ..." aria-label="Type Movies You want know ..."
-      aria-describedby="button-addon2">
-    <button class="btn btn-outline-danger fs-5" type="button" onclick="searching_movie()"
-      id="button-search">Search</button>
-  </div>
-
-  <div class="container">
-    <div id="Smovie_container_cards"> <!-- Automate insert from searchingApi,js --> </div>
-  </div>
-  <!-- ================================================ Movie Search References ======================================== -->
-
-  <!-- ================================================ Movie Details Show up ========================================== -->
-  <div class="modal fade" id="details_movie" tabindex="-1" aria-labelledby="details_movieLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="details_movieLabel">Movie Details</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="card" style="width: 18rem;">
+      <a href="./projects/colorSwitch/simple_switch.html" class="text-decoration-none">
+        <img src="images/project_colorswitch.png" class="card-img-top" alt="images project colorswitch">
+        <div class="card-body text-center text-body-secondary text-decoration-">
+          Color Switch
         </div>
-        <div class="modal-body">
-          <!-- This is the place for modal Details from searchingApi.js -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
+      </a>
     </div>
-  </div>
-  <!-- ================================================ Movie Details Show up ========================================== -->
 
+  </div>
   <!-- ================================================ Closing ======================================================== -->
   <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold text-body-emphasis">Thanks for participating</h1>
@@ -169,8 +125,6 @@
 
   <!-- Script References -->
   <script src="js/Script.js"></script>
-  <script src="js_API/api.js"></script>
-  <script src="js_API/searchingApi.js"></script>
   <!-- Script References -->
 
   <!-- Bootstraps -->
