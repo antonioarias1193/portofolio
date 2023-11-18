@@ -5,9 +5,15 @@
 body {
     margin: 0;
     padding: 0;
+    
   }
 
 /* =============== Navbar Head ============================ */
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+
   .container-fluid{
     transition: 0.2s;
  }

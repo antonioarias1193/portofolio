@@ -3,9 +3,9 @@ window.addEventListener("scroll", function () {
 	var container_fluid = document.querySelector(".container-fluid");
 
 	if (window.scrollY < 5) {
-		container_fluid.classList.add("m-5");
+		container_fluid.classList.add("my-5");
 	} else {
-		container_fluid.classList.remove("m-5");
+		container_fluid.classList.remove("my-5");
 	}
 
 	if (window.scrollY < 5) {
